@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-StrengthChecker</title>
+    <!-- <script src="https://kit.fontawesome.com/39843ed8dc.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Welcome</h1>
+        <form action="">
+            <div class="name">
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            </div>
+
+            <!-- ---------------------------------------------- -->
+            
+            <div class="password">
+                <label for="pass">password:</label><br>
+                <input type="password" name="pass" id="pass" placeholder="Enter Your Password">
+                <i class="fa fa-solid  fa-eye" onclick="showPassword(this)"></i>
+            </div>
+
+            <!-- ------------------------------------------------ -->
+
+            <div class="progress">
+
+                <div id="bar" class="p
+                " role="progressbar" 
+                aria-valuenow="40" 
+                aria-valuemin="0" 
+                aria-valuemax="100"
+                 
+               ></div>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <ul class="list-unstyled">
+                <li class="">
+                    <span class="low-upper-case">
+                        <i class="fas fa-circle" aria-hidden="true"></i>
+                        &nbsp;Lowercase &amp; Uppercase
+                    </span>
+                </li>
+                <li class="">
+                    <span class="one-number">
+                        <i class="fas fa-circle" aria-hidden="true"></i>
+                        &nbsp;Number (0-9)
+                    </span> 
+                </li>
+                <li class="">
+                    <span class="one-special-char">
+                        <i class="fas fa-circle" aria-hidden="true"></i>
+                        &nbsp;Special Character (!@#$%^&*)
+                    </span>
+                </li>
+                <li class="">
+                    <span class="eight-character">
+                        <i class="fas fa-circle" aria-hidden="true"></i>
+                        &nbsp;Atleast 8 Character
+                    </span>
+                </li>
+
+            </ul>
+
+            <!-- --------------------------------------------------------------- -->
+
+            <input type="button" value="CREATE ACCOUNT">
+        </form>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

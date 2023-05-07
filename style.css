@@ -1,0 +1,136 @@
+body, html{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+height: 100%;
+
+}
+main h1{
+    text-decoration: underline;
+}
+label{
+    font-weight:bold;
+   letter-spacing: 0.3px;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+main{
+    padding: 20px;
+    min-width: 30vw;
+    max-width: 30vw;
+    min-height: 60vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    border-radius: 20px;
+    box-shadow:
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.31),
+  100px 100px 80px rgba(0, 0, 0, 0.155)
+;
+
+}
+.list-unstyled{
+    list-style: none;
+
+}
+.progress{
+    width: 200px;
+    border-radius: 20px;
+    background-color: gray;
+    height: 3px;
+}
+.progress-bar-danger {
+    background-color: #e90f10;
+    position: relative;
+    width: 2.8em;
+    height: inherit;
+}
+.progress-bar-warning{
+    background-color: #ffad00;
+    position: relative;
+    width: 6.7em;
+    height: inherit;
+}
+.progress-bar-success{
+    background-color: #02b502;
+    width: inherit;
+    height: inherit;
+}
+main form{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    min-width: 13.8em;
+    position: relative;
+}
+form input[type='email'], input[type='password'],input[type='text']{
+    height: 20px;
+    padding-left: 10px;
+    width: 200px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+}
+input{
+    color:#022255 !important;
+    
+}
+input[type=email]:focus,
+input[type=password]:focus,
+input[type='text']
+{
+    box-shadow: 0 0 5px rgba(246, 8, 110,0.8);
+    border: 1px solid rgba(246, 8, 110,0.8);
+}
+.password{
+    position: relative;
+
+}
+.fas{
+font-size: 10px;
+/* color: #02b502; */
+}
+.fa-check{
+    color: greenyellow;
+}
+.fa{
+    position: absolute;
+    top: 28px;
+    right: 9px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.8s;
+
+}
+form input[type='button']{
+    background-color: #4158D0;
+    background-image: linear-gradient(102deg, #4158D0 22%, #C850C0 82%);
+    color: white;
+    width: 13.8em;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 150;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.7 ease-in-out;
+   
+    
+}
+
+
+form input[type='button']:hover{
+opacity: 0.9;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
